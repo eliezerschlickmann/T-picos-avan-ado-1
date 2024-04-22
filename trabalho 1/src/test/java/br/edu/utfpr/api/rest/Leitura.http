@@ -1,0 +1,29 @@
+@URL=http://localhost:8080/leitura
+
+### CREATE
+POST {{URL}}
+Content-Type: application/json
+
+{
+    "valor": 4,
+    "sensorid": 1
+    
+}
+
+### Obter todas as pessoas
+GET {{URL}}
+
+### Obter um gateway
+GET {{URL}}/2
+
+### Atualizar um gateway
+PUT {{URL}}/2
+Content-Type: application/json
+
+{
+    "valor": 23,
+    "sensorid": 2
+}
+
+### Deletar uma pessoa
+DELETE {{URL}}/2
